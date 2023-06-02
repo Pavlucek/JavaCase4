@@ -1,6 +1,5 @@
 # JavaCase4
 
-CASE 4 - Sockety
 CASE Study
 aplikacje konsolowe w architekturze klient - serwer realizowane z wykorzystaniem socketów
 
@@ -22,7 +21,9 @@ Wyślij wpisany tekst serwerowi
 Oczekuj na odebranie komunikatu od serwera
 Jeśli komunikat == bye - KONIEC
 Idź do kroku 2
+
 Level 2
+
 Program będzie działał jak powyżej, jednak do serwera będzie możliwe niezależne podłączenie kilku klientów. Serwer działa następująco:
 
 Słuchaj na porcie 7
@@ -31,7 +32,9 @@ Czekaj na wiadomość od klienta
 Odeślij klientowi wiadomość
 Jeśli wiadomość bye to zakończ wątek, jeśli nie to a)
 Wróć do kroku 1
+
 Level 3
+
 A jeżeli byśmy chcieli, aby wysłany przez klienta komunikat dotarł do pozostałych klientów?
 Sprawa nie jest taka prosta, ponieważ każdy z klientów może wysłać komunikat w dowolnym momencie. Pozostali muszą nasłuchiwać komunikatów.
 Rozwiązaniem jest zastosowanie dwóch socketów:
